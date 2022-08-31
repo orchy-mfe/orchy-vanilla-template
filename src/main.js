@@ -1,10 +1,14 @@
 import './style.css'
-import {renderWithQiankun,qiankunWindow} from "vite-plugin-qiankun/dist/helper";
+import {renderWithQiankun, qiankunWindow} from 'vite-plugin-qiankun/dist/helper'
 import viteLogo from './assets/vite.svg?raw'
 import javascriptLogo from './assets/javascript.svg?raw'
-import { setupCounter } from './counter.js'
+import {setupCounter} from './counter.js'
 
-document.querySelector('#app').innerHTML = `
+const retrieveContainer = props => props.container ?? document
+
+const render = (props) => {
+  const container = retrieveContainer(props)
+  container.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
       ${viteLogo}
@@ -22,20 +26,19 @@ document.querySelector('#app').innerHTML = `
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+  setupCounter(document.querySelector('#counter'))
+}
 
 renderWithQiankun({
   mount(props) {
-    render(props);
+    render(props)
   },
-  bootstrap() {},
-  unmount() {
-    root.unmount();
-    root._container.innerHTML = "";
-    root = null;
+  bootstrap() { },
+  unmount(props) {
+    retrieveContainer(props).innerHTML = ''
   },
-});
+})
 
 if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-  render({});
+  render({})
 }
