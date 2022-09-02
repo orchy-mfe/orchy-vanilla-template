@@ -1,7 +1,7 @@
 {
   "plugins": [],
   "extends": [
-    "eslint:recommended",
+    "eslint:recommended"
   ],
   "parserOptions": {
     "sourceType": "module",
