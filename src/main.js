@@ -10,10 +10,10 @@ const render = (props) => {
   const container = retrieveContainer(props)
   container.querySelector('#app').innerHTML = `
   <div>
-    <a href="https://vitejs.dev" target="_blank">
+    <a class="logo" href="https://vitejs.dev" target="_blank">
       ${viteLogo}
     </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <a class="logo vanilla" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       ${javascriptLogo}
     </a>
     <h1>Hello Vite!</h1>
