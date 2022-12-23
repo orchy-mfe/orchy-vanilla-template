@@ -11,7 +11,7 @@
     "lint": "eslint ./src --ext .js"
   },
   "devDependencies": {
-    "@testing-library/dom": "^8.19.0",
+    "@testing-library/dom": "^8.19.1",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
