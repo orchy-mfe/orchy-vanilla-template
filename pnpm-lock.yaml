@@ -14,8 +14,8 @@ dependencies:
 
 devDependencies:
   '@testing-library/dom':
-    specifier: ^10.0.0
-    version: 10.0.0
+    specifier: ^10.3.0
+    version: 10.3.0
   eslint:
     specifier: ^8.57.0
     version: 8.57.0
@@ -502,8 +502,8 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@testing-library/dom@10.0.0:
-    resolution: {integrity: sha512-PmJPnogldqoVFf+EwbHvbBJ98MmqASV8kLrBYgsDNxQcFMeIS7JFL48sfyXvuMtgmWO/wMhh25odr+8VhDmn4g==}
+  /@testing-library/dom@10.3.0:
+    resolution: {integrity: sha512-pT/TYB2+IyMYkkB6lqpkzD7VFbsR0JBJtflK3cS68sCNWxmOhWwRm1XvVHlseNEorsNcxkYsb4sRDV3aNIpttg==}
     engines: {node: '>=18'}
     dependencies:
       '@babel/code-frame': 7.18.6
